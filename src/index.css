@@ -1,0 +1,59 @@
+/** @format */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f8ff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.input-column {
+  border: 1px solid rgb(196 196 196);
+  padding: 16.5px 14px;
+  border-radius: 0.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3.5vh;
+  flex-wrap: wrap;
+}
+.input-column:hover {
+  border-color: rgb(33 33 33);
+}
+.input-lable {
+  color: rgb(102 102 102);
+  font-size: 1.7vh;
+  /* width: 50%; */
+  text-align: left;
+}
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.alert {
+  height: 25px;
+  width: 125px;
+  padding-inline: 2px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .input-column {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .input-lable {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.2vh !important;
+  }
+}
