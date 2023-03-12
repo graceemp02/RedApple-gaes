@@ -27,7 +27,6 @@ function LoginPage() {
   const [dialog, setdialog] = useState(false);
   useEffect(() => {
     if (id) {
-      console.log('Already Login');
       navigate('/');
     }
   }, []);
@@ -76,7 +75,6 @@ function LoginPage() {
           sm={4}
           md={8}
           sx={{
-            // backgroundImage: 'url(https://source.unsplash.com/random)',
             backgroundImage: `url(${LoginBanner})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
@@ -124,12 +122,10 @@ function LoginPage() {
                 autoComplete='current-password'
                 helperText={pwdError && 'Password Incorrent'}
               />
-              <br />
-              {/* Change with Button Tag. Start from below */}
               <Grid container>
                 <Grid item xs>
                   <Button type='submit' variant='contained' sx={{ mt: 3, mb: 2 }}>
-                    Login In
+                    Login
                   </Button>
                 </Grid>
                 <Grid item>
@@ -138,7 +134,7 @@ function LoginPage() {
                   </Link>
                 </Grid>
               </Grid>
-              {/* End Here */}
+
               <Copyright sx={{ mt: 5 }} />
             </Box>
           </Box>
