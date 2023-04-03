@@ -21,7 +21,7 @@ function Customers() {
       .then(result => {
         setCustomers(result.data);
         if (!clientID) {
-          localStorage.setItem('ins_client', result.data[0].id);
+          localStorage.setItem('gaes_client', result.data[0].id);
           setSelectedIndex(result.data[0].id);
           setClientID(result.data[0].id);
         }
@@ -31,7 +31,7 @@ function Customers() {
 
   const handleListItemClick = (e, index) => {
     e.preventDefault();
-    localStorage.setItem('ins_client', index);
+    localStorage.setItem('gaes_client', index);
     setSelectedIndex(index);
     setClientID(index);
   };

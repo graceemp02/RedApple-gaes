@@ -69,7 +69,7 @@ export default function MyDialog({ title, des, action }) {
           <Typography gutterBottom>{des}</Typography>
         </DialogContent>
         <DialogActions>
-          <Button onClick={() => action()} variant='contained' sx={{ maxWidth: 200 }}>
+          <Button onClick={handleClose} variant='contained' sx={{ maxWidth: 200 }}>
             OK
           </Button>
         </DialogActions>

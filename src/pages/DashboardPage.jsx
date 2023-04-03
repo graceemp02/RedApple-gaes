@@ -21,9 +21,7 @@ const DashboardPage = () => {
         </Item>
       </Grid>
       <Grid item xs={12} md={7} lg={9}>
-        {/* <Grid> */}
         <MainForm />
-        {/* </Grid> */}
       </Grid>
     </Grid>
   );
